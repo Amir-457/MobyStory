@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobyStory.Home"
+             Title="MobyStory">
+    <StackLayout VerticalOptions="FillAndExpand"
+                 HorizontalOptions="Center">
+        <Label Text="مرحبا في موبيسطوري"
+               VerticalOptions="Start"
+               HorizontalOptions="Center"
+               FontSize="Large"
+               TextColor="White"/>
+        <Frame BackgroundColor="AliceBlue"
+            VerticalOptions="Start"
+               HorizontalOptions="Center"
+            WidthRequest="270" HeightRequest="208">
+            <ImageButton 
+                 Source="C:\Users\User\source\repos\MobyStory\MobyStory\Resources\Images\wss.jpg"
+                 
+                 Clicked="Layla_Clicked"/>
+        </Frame>
+
+
+
+        <Frame BackgroundColor="AliceBlue"
+    VerticalOptions="Center"
+       HorizontalOptions="Center"
+    WidthRequest="270" HeightRequest="208">
+            <ImageButton 
+         Source="C:\Users\User\source\repos\MobyStory\MobyStory\Resources\Images\photo_13_2024_05_16_03_05_25.jpg"
+         
+         Clicked="Arnab_Clicked"/>
+        </Frame>
+
+        <Frame BackgroundColor="AliceBlue"
+    VerticalOptions="End"
+       HorizontalOptions="Center"
+               
+    WidthRequest="270" HeightRequest="208">
+            <ImageButton 
+         Source="C:\Users\User\source\repos\MobyStory\MobyStory\Resources\Images\photo_4_2024_05_16_03_05_47.jpg"
+         
+         Clicked="Namla_Clicked"/>
+        </Frame>
+
+    </StackLayout>
+</ContentPage>

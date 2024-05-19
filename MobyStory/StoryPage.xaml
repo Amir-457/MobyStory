@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobyStory.StoryPage"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Title="Story">
+    <StackLayout VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 BackgroundColor="Pink">
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <toolkit:MediaElement x:Name="ME" WidthRequest="0" HeightRequest="0" />
+            <Button x:Name="toggleButton"
+                    Text="القراءة الصوتية"
+                    BackgroundColor="Red"
+                    TextColor="White"
+                    FontSize="20"
+                    BorderColor="Blue"
+                    Clicked="ToggleButton_Clicked"
+                    Grid.Row="0"
+                    Grid.Column="0" />
+        </Grid>
+        <Label x:Name="pageNumberLabel"
+               Text="Page 1"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               TextColor="White"
+               FontSize="Large"/>
+        <Image x:Name="storyImage"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="Fill"
+               Aspect="AspectFit"/>
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="Center">
+            
+            <Button x:Name="previousButton"
+                    Text="Previous Page"
+                    BackgroundColor="#FF0000FF"
+                    TextColor="White"
+                    Clicked="PreviousButton_Clicked"
+                    IsEnabled="False"/>
+            <Button x:Name="homeButton"
+                    Text="Home"
+                    BackgroundColor="Green"
+                    TextColor="White"
+                    Clicked="HomeButton_Clicked"/>
+            <Button x:Name="nextButton"
+                    Text="Next Page"
+                    BackgroundColor="Blue"
+                    TextColor="White"
+                    Clicked="NextButton_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
